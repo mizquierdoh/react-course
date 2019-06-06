@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "rm -rf dist && parcel build src/index.html",
     "start": "npm run build && live-server dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
